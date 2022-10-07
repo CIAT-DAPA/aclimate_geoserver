@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:sld="http://www.opengis.net/sld">
+  <UserLayer>
+    <sld:LayerFeatureConstraints>
+      <sld:FeatureTypeConstraint/>
+    </sld:LayerFeatureConstraints>
+    <sld:UserStyle>
+      <sld:Name>et_coffee_max_heat_wave_duration</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:RasterSymbolizer>
+            <sld:ChannelSelection>
+              <sld:GrayChannel>
+                <sld:SourceChannelName>1</sld:SourceChannelName>
+              </sld:GrayChannel>
+            </sld:ChannelSelection>
+            <sld:ColorMap type="ramp">
+              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+
+              <sld:ColorMapEntry label="3" c quantity="3" color="#ffffcc"/>
+              <sld:ColorMapEntry label="43"  quantity="43" color="#ffeda0"/>
+              <sld:ColorMapEntry label="83"  quantity="83" color="#fed976"/>
+              <sld:ColorMapEntry label="123" quantity="123" color="#feb24c"/>
+              <sld:ColorMapEntry label="163" quantity="163" color="#fd8d3c"/>
+              <sld:ColorMapEntry label="203" quantity="203" color="#fc4e2a"/>
+              <sld:ColorMapEntry label="243" quantity="243" color="#e31a1c"/>
+              <sld:ColorMapEntry label="283" quantity="283" color="#bd0026"/>
+              <sld:ColorMapEntry label="323" quantity="323" color="#800026"/>
+              <sld:ColorMapEntry label="363" quantity="363" color="#67000d"/>
+
+              
+            </sld:ColorMap>
+          </sld:RasterSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </UserLayer>
+</StyledLayerDescriptor>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:sld="http://www.opengis.net/sld">
+  <UserLayer>
+    <sld:LayerFeatureConstraints>
+      <sld:FeatureTypeConstraint/>
+    </sld:LayerFeatureConstraints>
+    <sld:UserStyle>
+      <sld:Name>et_maize_number_dry_days</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:RasterSymbolizer>
+            <sld:ChannelSelection>
+              <sld:GrayChannel>
+                <sld:SourceChannelName>1</sld:SourceChannelName>
+              </sld:GrayChannel>
+            </sld:ChannelSelection>
+            <sld:ColorMap type="ramp">
+              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+
+              <sld:ColorMapEntry label="69"  quantity="69"  color="#ffffe5"/>
+              <sld:ColorMapEntry label="86"  quantity="86"  color="#fff7bc"/>
+              <sld:ColorMapEntry label="103" quantity="103" color="#fee391"/>
+              <sld:ColorMapEntry label="120" quantity="120" color="#fec44f"/>
+              <sld:ColorMapEntry label="137" quantity="137" color="#fe9929"/>
+              <sld:ColorMapEntry label="154" quantity="154" color="#ec7014"/>
+              <sld:ColorMapEntry label="171" quantity="171" color="#cc4c02"/>
+              <sld:ColorMapEntry label="188" quantity="188" color="#993404"/>
+              <sld:ColorMapEntry label="205" quantity="205" color="#7f2704"/>
+              <sld:ColorMapEntry label="222" quantity="222" color="#662506"/>
+
+              
+            </sld:ColorMap>
+          </sld:RasterSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </UserLayer>
+</StyledLayerDescriptor>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:sld="http://www.opengis.net/sld">
+  <UserLayer>
+    <sld:LayerFeatureConstraints>
+      <sld:FeatureTypeConstraint/>
+    </sld:LayerFeatureConstraints>
+    <sld:UserStyle>
+      <sld:Name>et_soybean_pet</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:RasterSymbolizer>
+            <sld:ChannelSelection>
+              <sld:GrayChannel>
+                <sld:SourceChannelName>1</sld:SourceChannelName>
+              </sld:GrayChannel>
+            </sld:ChannelSelection>
+            <sld:ColorMap type="ramp">
+              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+
+              <sld:ColorMapEntry label="1251" quantity="1251" color="#313695"/>
+              <sld:ColorMapEntry label="1336" quantity="1336" color="#4575b4"/>
+              <sld:ColorMapEntry label="1421" quantity="1421"  color="#74add1"/>
+              <sld:ColorMapEntry label="1506" quantity="1506"  color="#abd9e9"/>
+              <sld:ColorMapEntry label="1591" quantity="1591"  color="#e0f3f8"/>
+              <sld:ColorMapEntry label="1676" quantity="1676"  color="#fee090"/>
+              <sld:ColorMapEntry label="1761" quantity="1761"  color="#fdae61"/>
+              <sld:ColorMapEntry label="1846" quantity="1846"  color="#f46d43"/>
+              <sld:ColorMapEntry label="1931" quantity="1931"  color="#d73027"/>
+              <sld:ColorMapEntry label="2016" quantity="2016"  color="#a50026"/>
+
+              
+            </sld:ColorMap>
+          </sld:RasterSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </UserLayer>
+</StyledLayerDescriptor>

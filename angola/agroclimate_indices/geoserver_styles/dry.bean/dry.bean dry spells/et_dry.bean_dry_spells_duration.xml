@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:sld="http://www.opengis.net/sld">
+  <UserLayer>
+    <sld:LayerFeatureConstraints>
+      <sld:FeatureTypeConstraint/>
+    </sld:LayerFeatureConstraints>
+    <sld:UserStyle>
+      <sld:Name>et_dry.bean_dry_spells_duration</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:RasterSymbolizer>
+            <sld:ChannelSelection>
+              <sld:GrayChannel>
+                <sld:SourceChannelName>1</sld:SourceChannelName>
+              </sld:GrayChannel>
+            </sld:ChannelSelection>
+            <sld:ColorMap type="ramp">
+              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+
+              <sld:ColorMapEntry label="5"  quantity="5"  color="#ffffe5"/>
+              <sld:ColorMapEntry label="8"  quantity="8"  color="#fff7bc"/>
+              <sld:ColorMapEntry label="11" quantity="11" color="#fee391"/>
+              <sld:ColorMapEntry label="14" quantity="14" color="#fec44f"/>
+              <sld:ColorMapEntry label="17" quantity="17" color="#fe9929"/>
+              <sld:ColorMapEntry label="20" quantity="20" color="#ec7014"/>
+              <sld:ColorMapEntry label="23" quantity="23" color="#cc4c02"/>
+              <sld:ColorMapEntry label="26" quantity="26" color="#993404"/>
+              <sld:ColorMapEntry label="29" quantity="29" color="#7f2704"/>
+              <sld:ColorMapEntry label="32" quantity="32" color="#662506"/>
+
+              
+            </sld:ColorMap>
+          </sld:RasterSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </UserLayer>
+</StyledLayerDescriptor>

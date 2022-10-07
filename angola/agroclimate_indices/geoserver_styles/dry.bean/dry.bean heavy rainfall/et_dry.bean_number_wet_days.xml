@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:sld="http://www.opengis.net/sld">
+  <UserLayer>
+    <sld:LayerFeatureConstraints>
+      <sld:FeatureTypeConstraint/>
+    </sld:LayerFeatureConstraints>
+    <sld:UserStyle>
+      <sld:Name>et_dry.bean_number_wet_days</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:RasterSymbolizer>
+            <sld:ChannelSelection>
+              <sld:GrayChannel>
+                <sld:SourceChannelName>1</sld:SourceChannelName>
+              </sld:GrayChannel>
+            </sld:ChannelSelection>
+            <sld:ColorMap type="ramp">
+              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+
+              <sld:ColorMapEntry label="8"   quantity="8"  color="#f7fcf0"/>
+              <sld:ColorMapEntry label="22"  quantity="22" color="#e0f3db"/>
+              <sld:ColorMapEntry label="36"  quantity="36" color="#ccebc5"/>
+              <sld:ColorMapEntry label="50"  quantity="50" color="#a8ddb5"/>
+              <sld:ColorMapEntry label="64"  quantity="64" color="#7bccc4"/>
+              <sld:ColorMapEntry label="78"  quantity="78" color="#4eb3d3"/>
+              <sld:ColorMapEntry label="92"  quantity="92" color="#2b8cbe"/>
+              <sld:ColorMapEntry label="106" quantity="106" color="#0868ac"/>
+              <sld:ColorMapEntry label="120" quantity="120" color="#084081"/>
+              <sld:ColorMapEntry label="134" quantity="134" color="#08306b"/>
+
+              
+            </sld:ColorMap>
+          </sld:RasterSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </UserLayer>
+</StyledLayerDescriptor>

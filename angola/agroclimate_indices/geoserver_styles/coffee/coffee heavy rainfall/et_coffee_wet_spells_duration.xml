@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:sld="http://www.opengis.net/sld">
+  <UserLayer>
+    <sld:LayerFeatureConstraints>
+      <sld:FeatureTypeConstraint/>
+    </sld:LayerFeatureConstraints>
+    <sld:UserStyle>
+      <sld:Name>et_coffee_wet_spells_duration</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:RasterSymbolizer>
+            <sld:ChannelSelection>
+              <sld:GrayChannel>
+                <sld:SourceChannelName>1</sld:SourceChannelName>
+              </sld:GrayChannel>
+            </sld:ChannelSelection>
+            <sld:ColorMap type="ramp">
+              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+
+              <sld:ColorMapEntry label="5"  quantity="5"  color="#B5E48C"/>
+              <sld:ColorMapEntry label="6"  quantity="6"  color="#99D98C"/>
+              <sld:ColorMapEntry label="8"  quantity="8"  color="#76C893"/>
+              <sld:ColorMapEntry label="10" quantity="10" color="#52B69A"/>
+              <sld:ColorMapEntry label="12" quantity="12" color="#34A0A4"/>
+              <sld:ColorMapEntry label="13" quantity="13" color="#31989B"/>
+              <sld:ColorMapEntry label="16" quantity="16" color="#168AAD"/>
+              <sld:ColorMapEntry label="19" quantity="19" color="#1790B5"/>
+              <sld:ColorMapEntry label="22" quantity="22" color="#1A759F"/>
+              <sld:ColorMapEntry label="25" quantity="25" color="#1E6091"/>
+              <sld:ColorMapEntry label="28" quantity="28" color="#184E77"/>
+              <sld:ColorMapEntry label="31" quantity="31" color="#113755"/>
+              <sld:ColorMapEntry label="34" quantity="34" color="#0A2133"/>
+              <sld:ColorMapEntry label="37" quantity="37" color="#061623"/>
+              <sld:ColorMapEntry label="40" quantity="40" color="#061623"/>
+
+              
+            </sld:ColorMap>
+          </sld:RasterSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </UserLayer>
+</StyledLayerDescriptor>

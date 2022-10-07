@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:sld="http://www.opengis.net/sld">
+  <UserLayer>
+    <sld:LayerFeatureConstraints>
+      <sld:FeatureTypeConstraint/>
+    </sld:LayerFeatureConstraints>
+    <sld:UserStyle>
+      <sld:Name>et_coffee_total_precipitation</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:RasterSymbolizer>
+            <sld:ChannelSelection>
+              <sld:GrayChannel>
+                <sld:SourceChannelName>1</sld:SourceChannelName>
+              </sld:GrayChannel>
+            </sld:ChannelSelection>
+            <sld:ColorMap type="ramp">
+              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+
+              <sld:ColorMapEntry label="267"  quantity="267" color="#f7fcf0"/>
+              <sld:ColorMapEntry label="463"  quantity="463" color="#e0f3db"/>
+              <sld:ColorMapEntry label="659"  quantity="659" color="#ccebc5"/>
+              <sld:ColorMapEntry label="855"  quantity="855"  color="#a8ddb5"/>
+              <sld:ColorMapEntry label="1051" quantity="1051" color="#7bccc4"/>
+              <sld:ColorMapEntry label="1247" quantity="1247" color="#4eb3d3"/>
+              <sld:ColorMapEntry label="1443" quantity="1443" color="#2b8cbe"/>
+              <sld:ColorMapEntry label="1639" quantity="1639" color="#0868ac"/>
+              <sld:ColorMapEntry label="1835" quantity="1835" color="#084081"/>
+              <sld:ColorMapEntry label="2031" quantity="2031" color="#08306b"/>
+
+              
+            </sld:ColorMap>
+          </sld:RasterSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </UserLayer>
+</StyledLayerDescriptor>
