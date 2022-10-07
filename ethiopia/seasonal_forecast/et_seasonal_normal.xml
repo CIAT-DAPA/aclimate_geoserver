@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:sld="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml">
+  <UserLayer>
+    <sld:LayerFeatureConstraints>
+      <sld:FeatureTypeConstraint/>
+    </sld:LayerFeatureConstraints>
+    <sld:UserStyle>
+      <sld:Name>seasonal_normal</sld:Name>
+      <sld:Abstract>seasonal preciptiation forecast probablistic normal</sld:Abstract>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:RasterSymbolizer>
+            <sld:ChannelSelection>
+              <sld:GrayChannel>
+                <sld:SourceChannelName>1</sld:SourceChannelName>
+              </sld:GrayChannel>
+            </sld:ChannelSelection>
+            <sld:ColorMap type="ramp">
+              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+              
+              <sld:ColorMapEntry quantity="30.0" label="≤30"     color="#f7fcf5"/>
+              <sld:ColorMapEntry quantity="35.0" label="30 - 35" color="#f7fcf5"/>
+              <sld:ColorMapEntry quantity="40.0" label="35 - 40" color="#e2f4dd"/>
+              <sld:ColorMapEntry quantity="45.0" label="40 - 45" color="#bfe6b9"/>
+              <sld:ColorMapEntry quantity="50.0" label="45 - 50" color="#94d390"/>
+              <sld:ColorMapEntry quantity="55.0" label="50 - 55" color="#60ba6c"/>
+              <sld:ColorMapEntry quantity="60.0" label="55 - 60" color="#329b51"/>
+              <sld:ColorMapEntry quantity="65.0" label="60 - 65" color="#0d7835"/>
+              <sld:ColorMapEntry quantity="70.0" label="65 - 70" color="#00441b"/>
+              <sld:ColorMapEntry quantity="71.0" label="≥70"   	 color="#00441b"/>
+            </sld:ColorMap>
+          </sld:RasterSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </UserLayer>
+</StyledLayerDescriptor>
