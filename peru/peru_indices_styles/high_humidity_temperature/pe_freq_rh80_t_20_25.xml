@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:sld="http://www.opengis.net/sld">
+  <UserLayer>
+    <sld:LayerFeatureConstraints>
+      <sld:FeatureTypeConstraint/>
+    </sld:LayerFeatureConstraints>
+    <sld:UserStyle>
+      <sld:Name>pe_freq_rh80_t_20_25</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:RasterSymbolizer>
+            <sld:ChannelSelection>
+              <sld:GrayChannel>
+                <sld:SourceChannelName>1</sld:SourceChannelName>
+              </sld:GrayChannel>
+            </sld:ChannelSelection>
+            <sld:ColorMap type="ramp">
+              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+
+              <sld:ColorMapEntry label="0"    quantity="0"    color="#f7fcfd"/>
+              <sld:ColorMapEntry label="11.1" quantity="11.1" color="#e5f5f9"/>
+              <sld:ColorMapEntry label="22.2" quantity="22.2" color="#ccece6"/>
+              <sld:ColorMapEntry label="33.3" quantity="33.3" color="#99d8c9"/>
+              <sld:ColorMapEntry label="44.4" quantity="44.4" color="#66c2a4"/>
+              <sld:ColorMapEntry label="55.6" quantity="55.6" color="#41ae76"/>
+              <sld:ColorMapEntry label="66.7" quantity="66.7" color="#238b45"/>
+              <sld:ColorMapEntry label="77.8" quantity="77.8" color="#006d2c"/>
+              <sld:ColorMapEntry label="88.9" quantity="88.9" color="#00441b"/>
+              
+            </sld:ColorMap>
+          </sld:RasterSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </UserLayer>
+</StyledLayerDescriptor>

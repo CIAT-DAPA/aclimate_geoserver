@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:sld="http://www.opengis.net/sld">
+  <UserLayer>
+    <sld:LayerFeatureConstraints>
+      <sld:FeatureTypeConstraint/>
+    </sld:LayerFeatureConstraints>
+    <sld:UserStyle>
+      <sld:Name>pe_t15_consec</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:RasterSymbolizer>
+            <sld:ChannelSelection>
+              <sld:GrayChannel>
+                <sld:SourceChannelName>1</sld:SourceChannelName>
+              </sld:GrayChannel>
+            </sld:ChannelSelection>
+            <sld:ColorMap type="ramp">
+              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+
+              <sld:ColorMapEntry label="6.0"   quantity="6.0"   color="#fcfbfd"/>
+              <sld:ColorMapEntry label="22.3"  quantity="22.3"  color="#efedf5"/>
+              <sld:ColorMapEntry label="38.7"  quantity="38.7"  color="#dadaeb"/>
+              <sld:ColorMapEntry label="55.0"  quantity="55.0"  color="#bcbddc"/>
+              <sld:ColorMapEntry label="71.3"  quantity="71.3"  color="#9e9ac8"/>
+              <sld:ColorMapEntry label="87.7"  quantity="87.7"  color="#807dba"/>
+              <sld:ColorMapEntry label="104.0" quantity="104.0"  color="#6a51a3"/>
+              <sld:ColorMapEntry label="120.3" quantity="120.3"  color="#54278f"/>
+              <sld:ColorMapEntry label="136.7" quantity="136.7"  color="#3f007d"/>
+
+
+              
+            </sld:ColorMap>
+          </sld:RasterSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </UserLayer>
+</StyledLayerDescriptor>

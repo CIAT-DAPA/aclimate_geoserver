@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:sld="http://www.opengis.net/sld">
+  <UserLayer>
+    <sld:LayerFeatureConstraints>
+      <sld:FeatureTypeConstraint/>
+    </sld:LayerFeatureConstraints>
+    <sld:UserStyle>
+      <sld:Name>pe_total_rainfall</sld:Name>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:RasterSymbolizer>
+            <sld:ChannelSelection>
+              <sld:GrayChannel>
+                <sld:SourceChannelName>1</sld:SourceChannelName>
+              </sld:GrayChannel>
+            </sld:ChannelSelection>
+            <sld:ColorMap type="ramp">
+              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+
+              <sld:ColorMapEntry label="34"     quantity="34"     color="#f7fcf0"/>
+              <sld:ColorMapEntry label="246.5"  quantity="246.5"  color="#e0f3db"/>
+              <sld:ColorMapEntry label="459"    quantity="459"    color="#ccebc5"/>
+              <sld:ColorMapEntry label="671.5"  quantity="671.5"  color="#a8ddb5"/>
+              <sld:ColorMapEntry label="884"    quantity="884"    color="#7bccc4"/>
+              <sld:ColorMapEntry label="1096.5" quantity="1096.5" color="#4eb3d3"/>
+              <sld:ColorMapEntry label="1309"   quantity="1309"   color="#2b8cbe"/>
+              <sld:ColorMapEntry label="1521.5" quantity="1521.5" color="#0868ac"/>
+              <sld:ColorMapEntry label="1734"   quantity="1734"   color="#084081"/>
+              <sld:ColorMapEntry label="1946.5" quantity="1946.5" color="#08306b"/>
+
+              
+            </sld:ColorMap>
+          </sld:RasterSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </UserLayer>
+</StyledLayerDescriptor>
