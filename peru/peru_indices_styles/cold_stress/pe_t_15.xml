@@ -15,17 +15,17 @@
               </sld:GrayChannel>
             </sld:ChannelSelection>
             <sld:ColorMap type="ramp">
-              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+              <sld:ColorMapEntry color="#ffffff" label="" quantity="0" opacity="0"/>
 
-              <sld:ColorMapEntry label="0"     quantity="0"    color="#fcfbfd"/>
-              <sld:ColorMapEntry label="17"    quantity="17"   color="#efedf5"/>
-              <sld:ColorMapEntry label="32.3"  quantity="32.3" color="#dadaeb"/>
-              <sld:ColorMapEntry label="47.6"  quantity="47.6" color="#bcbddc"/>
-              <sld:ColorMapEntry label="62.9"  quantity="62.9" color="#9e9ac8"/>
-              <sld:ColorMapEntry label="78.2"  quantity="78.2" color="#807dba"/>
-              <sld:ColorMapEntry label="93.5"  quantity="93.5" color="#6a51a3"/>
-              <sld:ColorMapEntry label="108.8" quantity="108.8"  color="#54278f"/>
-              <sld:ColorMapEntry label="124.1" quantity="124.1"  color="#3f007d"/>
+              <sld:ColorMapEntry label="0 - 17"     quantity="0"    color="#fcfbfd"/>
+              <sld:ColorMapEntry label="17 - 32"    quantity="17"   color="#efedf5"/>
+              <sld:ColorMapEntry label="32 - 48"  quantity="32" color="#dadaeb"/>
+              <sld:ColorMapEntry label="48 - 63"  quantity="48" color="#bcbddc"/>
+              <sld:ColorMapEntry label="63 - 78"  quantity="63" color="#9e9ac8"/>
+              <sld:ColorMapEntry label="78 - 93"  quantity="78" color="#807dba"/>
+              <sld:ColorMapEntry label="93 - 109"  quantity="93" color="#6a51a3"/>
+              <sld:ColorMapEntry label="109 - 124" quantity="109"  color="#54278f"/>
+              <sld:ColorMapEntry label="≥ 124" quantity="124"  color="#3f007d"/>
 
 
               
