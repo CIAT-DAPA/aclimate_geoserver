@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" version="1.0.0" xmlns:ogc="http://www.opengis.net/ogc" xmlns:sld="http://www.opengis.net/sld" xmlns:gml="http://www.opengis.net/gml">
+  <UserLayer>
+    <sld:LayerFeatureConstraints>
+      <sld:FeatureTypeConstraint/>
+    </sld:LayerFeatureConstraints>
+    <sld:UserStyle>
+      <sld:Name>seasonal_dominant</sld:Name>
+      <sld:Abstract>seasonal preciptiation forecast probablistic dominant</sld:Abstract>
+      <sld:FeatureTypeStyle>
+        <sld:Rule>
+          <sld:RasterSymbolizer>
+            <sld:ChannelSelection>
+              <sld:GrayChannel>
+                <sld:SourceChannelName>1</sld:SourceChannelName>
+              </sld:GrayChannel>
+            </sld:ChannelSelection>
+            <sld:ColorMap type="ramp">
+              <sld:ColorMapEntry color="#ffffff" label="0" quantity="0" opacity="0"/>
+              
+              <sld:ColorMapEntry quantity="30.0" label="≤30"   color="#f7fbff"/>
+              <sld:ColorMapEntry quantity="35.0" label="30 - 35"  color="#f7fbff"/>
+              <sld:ColorMapEntry quantity="40.0" label="35 - 40" color="#dce9f6"/>
+              <sld:ColorMapEntry quantity="45.0" label="40 - 45" color="#bed8ec"/>
+              <sld:ColorMapEntry quantity="50.0" label="45 - 50" color="#8fc2de"/>
+              <sld:ColorMapEntry quantity="55.0" label="50 - 55" color="#5ba3d0"/>
+              <sld:ColorMapEntry quantity="60.0" label="55 - 60" color="#3282be"/>
+              <sld:ColorMapEntry quantity="65.0" label="60 - 65" color="#115ca5"/>
+              <sld:ColorMapEntry quantity="70.0" label="65 - 70" color="#08306b"/>
+              <sld:ColorMapEntry quantity="71.0" label="≥70"   color="#08306b"/>
+              
+              <sld:ColorMapEntry quantity="100.0" label=""     color="#f7fcf5"/>
+              <sld:ColorMapEntry quantity="130.0" label="≤130"     color="#f7fcf5"/>
+              <sld:ColorMapEntry quantity="135.0" label="130 - 135" color="#f7fcf5"/>
+              <sld:ColorMapEntry quantity="140.0" label="135 - 140" color="#e2f4dd"/>
+              <sld:ColorMapEntry quantity="145.0" label="140 - 145" color="#bfe6b9"/>
+              <sld:ColorMapEntry quantity="150.0" label="145 - 150" color="#94d390"/>
+              <sld:ColorMapEntry quantity="155.0" label="150 - 155" color="#60ba6c"/>
+              <sld:ColorMapEntry quantity="160.0" label="155 - 160" color="#329b51"/>
+              <sld:ColorMapEntry quantity="165.0" label="160 - 165" color="#0d7835"/>
+              <sld:ColorMapEntry quantity="170.0" label="165 - 170" color="#00441b"/>
+              <sld:ColorMapEntry quantity="171.0" label="≥170"   	 color="#00441b"/>
+             
+              
+              <sld:ColorMapEntry quantity="200.0" label=""     color="#fef0d9"/>
+              <sld:ColorMapEntry quantity="230.0" label="≤230"     color="#fef0d9"/>
+              <sld:ColorMapEntry quantity="235.0" label="230 - 235" color="#fef0d9"/>
+              <sld:ColorMapEntry quantity="240.0" label="235 - 240" color="#fddbac"/>
+              <sld:ColorMapEntry quantity="245.0" label="240 - 245" color="#fdc383"/>
+              <sld:ColorMapEntry quantity="250.0" label="245 - 250" color="#fc9f67"/>
+              <sld:ColorMapEntry quantity="255.0" label="250 - 255" color="#f57a4e"/>
+              <sld:ColorMapEntry quantity="260.0" label="255 - 260" color="#e75438"/>
+              <sld:ColorMapEntry quantity="265.0" label="260 - 265" color="#ce2a1d"/>
+              <sld:ColorMapEntry quantity="270.0" label="265 - 270" color="#b30000"/>
+              <sld:ColorMapEntry quantity="271.0" label="≥270"   	 color="#b30000"/>
+              
+            </sld:ColorMap>
+          </sld:RasterSymbolizer>
+        </sld:Rule>
+      </sld:FeatureTypeStyle>
+    </sld:UserStyle>
+  </UserLayer>
+</StyledLayerDescriptor>
